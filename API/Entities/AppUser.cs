@@ -2,8 +2,9 @@
 {
     public class AppUser
     {
-        //prop then Tab or PropFull then Tab 
         public int Id { get; set; }
         public string UserName { get; set; }
+        public byte[] PasswordHashed { get; set; }
+        public byte[] PasswordSalt { get; set; }
     }
 }

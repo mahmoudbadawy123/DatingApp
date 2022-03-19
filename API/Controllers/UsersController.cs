@@ -6,9 +6,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class UsersController : ControllerBase
+    //[Route("api/[controller]")]
+    //[ApiController] // No need with inherting from BaseApiController 
+    public class UsersController : BaseApiController
     {
         private readonly DataContext _dbContext;
 
